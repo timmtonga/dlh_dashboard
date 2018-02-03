@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  get 'main/index'
+
+  get 'main/notification'
+
+  get 'main/kpis'
+
+  get '/notices' => "main#notices"
+
+  get "/partial1" => "main#partial1"
+  get "/partial2" => "main#partial2"
+  get "/partial3" => "main#partial3"
+  get "/partial4" => "main#partial4"
+
+  root "main#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

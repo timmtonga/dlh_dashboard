@@ -1,0 +1,27 @@
+<div class="header">
+  DLH Dashboard
+</div>
+<div id="content" style="margin-top:7vh;width: 100vw;height: 93vh; overflow-x: hidden">
+  <div style="display: table;width: 98vw;margin-left: auto;margin-right: auto;">
+    <div style="display: table-row">
+      <div style="display: table-cell;height: 45vh;width: 48vw;padding: 5px;">
+        <%= render partial: 'partial1' %>
+      </div>
+      <div style="display: table-cell;height: 45vh;width: 48vw;padding: 5px;">
+        <%= render partial: 'partial2' %>
+      </div>
+    </div>
+    <div style="display: table-row">
+      <div style="display: table-cell;height: 45vh;width: 48vw;padding: 5px;">
+        <%= render partial: 'partial3' %>
+      </div>
+      <div style="display: table-cell;height: 45vh;width: 48vw;padding: 5px;">
+        <%= render partial: 'partial4' %>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+    // This reloads this page every minute
+    setTimeout("window.location='/main/kpis'", 60000)
+</script>
